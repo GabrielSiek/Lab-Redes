@@ -1,0 +1,10 @@
+# Base de credenciais do serviço-alvo — Fase 1
+# Formato: usuario:senha  (uma por linha; '#' inicia comentário)
+#
+# ATENÇÃO: senhas em TEXTO CLARO de propósito. Esta é a fragilidade que o
+# interceptador passivo (sniffer.py) demonstra na Fase 1 e que a Fase 3
+# corrige (armazenamento com hash + canal TLS). Não reutilize estas senhas.
+alice:S3nh4Secreta
+bob:123456
+carol:qwerty2026
+admin:admin
