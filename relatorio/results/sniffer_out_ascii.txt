@@ -1,0 +1,125 @@
+========================================================================
+ INTERCEPTADOR PASSIVO - Fase 1 (escuta em texto claro)
+ interface=v-obs-lab  porta-alvo=5050  pcap=/tmp/fase1/saida_demo/captura.pcap
+ quebra de confidencialidade: credenciais lidas sem participar da conexao
+========================================================================
+
+[pacote #1] 18:14:24  10.0.0.20:5050 -> 10.0.0.10:51184  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #2] 18:14:24  10.0.0.10:51184 -> 10.0.0.20:5050  flags=PSH,ACK  len=25
+    payload: 'LOGIN alice S3nh4Secreta'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = alice
+    !!!   senha   = S3nh4Secreta
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #3] 18:14:24  10.0.0.20:5050 -> 10.0.0.10:51184  flags=PSH,ACK  len=23
+    payload: '200 OK bem-vindo alice'
+
+[pacote #4] 18:14:24  10.0.0.10:51184 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #5] 18:14:24  10.0.0.20:5050 -> 10.0.0.10:51184  flags=PSH,ACK  len=10
+    payload: '221 tchau'
+
+[pacote #6] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51190  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #7] 18:14:25  10.0.0.10:51190 -> 10.0.0.20:5050  flags=PSH,ACK  len=22
+    payload: 'LOGIN bob senhaERRADA'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = bob
+    !!!   senha   = senhaERRADA
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #8] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51190  flags=PSH,ACK  len=31
+    payload: '401 ERRO credenciais invalidas'
+
+[pacote #9] 18:14:25  10.0.0.10:51190 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #10] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51190  flags=PSH,ACK  len=10
+    payload: '221 tchau'
+
+[pacote #11] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51206  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #12] 18:14:25  10.0.0.10:51206 -> 10.0.0.20:5050  flags=PSH,ACK  len=18
+    payload: 'LOGIN admin admin'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = admin
+    !!!   senha   = admin
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #13] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51206  flags=PSH,ACK  len=23
+    payload: '200 OK bem-vindo admin'
+
+[pacote #14] 18:14:25  10.0.0.10:51206 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #15] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51206  flags=PSH,ACK  len=10
+    payload: '221 tchau'
+
+[pacote #16] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51212  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #17] 18:14:25  10.0.0.10:51212 -> 10.0.0.20:5050  flags=PSH,ACK  len=23
+    payload: 'LOGIN carol qwerty2026'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = carol
+    !!!   senha   = qwerty2026
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #18] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51212  flags=PSH,ACK  len=23
+    payload: '200 OK bem-vindo carol'
+
+[pacote #19] 18:14:25  10.0.0.10:51212 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #20] 18:14:25  10.0.0.20:5050 -> 10.0.0.10:51212  flags=PSH,ACK  len=10
+    payload: '221 tchau'
+
+[pacote #21] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51230  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #22] 18:14:26  10.0.0.10:51230 -> 10.0.0.20:5050  flags=PSH,ACK  len=25
+    payload: 'LOGIN alice S3nh4Secreta'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = alice
+    !!!   senha   = S3nh4Secreta
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #23] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51230  flags=PSH,ACK  len=23
+    payload: '200 OK bem-vindo alice'
+
+[pacote #24] 18:14:26  10.0.0.10:51230 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #25] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51230  flags=PSH,ACK  len=10
+    payload: '221 tchau'
+
+[pacote #26] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51226  flags=PSH,ACK  len=27
+    payload: '200 AUTH-SERVICE v1 pronto'
+
+[pacote #27] 18:14:26  10.0.0.10:51226 -> 10.0.0.20:5050  flags=PSH,ACK  len=23
+    payload: 'LOGIN carol qwerty2026'
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! CREDENCIAIS CAPTURADAS EM TEXTO CLARO
+    !!!   usuario = carol
+    !!!   senha   = qwerty2026
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+[pacote #28] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51226  flags=PSH,ACK  len=23
+    payload: '200 OK bem-vindo carol'
+
+[pacote #29] 18:14:26  10.0.0.10:51226 -> 10.0.0.20:5050  flags=PSH,ACK  len=5
+    payload: 'QUIT'
+
+[pacote #30] 18:14:26  10.0.0.20:5050 -> 10.0.0.10:51226  flags=PSH,ACK  len=10
+    payload: '221 tchau'

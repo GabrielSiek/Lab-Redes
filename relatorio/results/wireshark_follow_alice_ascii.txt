@@ -1,0 +1,22 @@
+
+===================================================================
+Follow: tcp,ascii
+Filter: tcp.stream eq 0
+Node 0: 10.0.0.20:5050
+Node 1: 10.0.0.10:51184
+27
+200 AUTH-SERVICE v1 pronto
+
+	25
+LOGIN alice S3nh4Secreta
+
+23
+200 OK bem-vindo alice
+
+	5
+QUIT
+
+10
+221 tchau
+
+===================================================================

@@ -1,3 +1,12 @@
-*.pdf
 __pycache__/
 *.pyc
+# Artefatos de compilacao LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Copia duplicada do relatorio na raiz (versao versionada fica em relatorio/)
+/relatorio_fase1.pdf
