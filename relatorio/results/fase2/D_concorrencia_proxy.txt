@@ -1,0 +1,41 @@
+[23:26:34] PROXY MITM escutando em 127.0.0.1:5151 -> servidor 127.0.0.1:5050  adulteração: nenhuma
+[23:26:35] [sessão 1] + cliente 127.0.0.1:60539 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 1] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 1] C->S: 'LOGIN alice S3nh4Secreta'
+[23:26:35] [sessão 1] S->C: '200 OK bem-vindo alice'
+[23:26:35] [sessão 2] + cliente 127.0.0.1:60541 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 2] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 2] C->S: 'LOGIN carol qwerty2026'
+[23:26:35] [sessão 2] S->C: '200 OK bem-vindo carol'
+[23:26:35] [sessão 3] + cliente 127.0.0.1:60547 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 3] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 3] C->S: 'LOGIN bob 123456'
+[23:26:35] [sessão 3] S->C: '200 OK bem-vindo bob'
+[23:26:35] [sessão 3] C->S: 'QUIT'
+[23:26:35] [sessão 3] S->C: '221 tchau'
+[23:26:35] [sessão 3] - encerrada conexão de 127.0.0.1:60547
+[23:26:35] [sessão 4] + cliente 127.0.0.1:60550 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 4] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 4] C->S: 'LOGIN admin senhaERRADA'
+[23:26:35] [sessão 4] S->C: '401 ERRO credenciais invalidas'
+[23:26:35] [sessão 4] C->S: 'QUIT'
+[23:26:35] [sessão 4] S->C: '221 tchau'
+[23:26:35] [sessão 4] - encerrada conexão de 127.0.0.1:60550
+[23:26:35] [sessão 5] + cliente 127.0.0.1:60552 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 5] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 5] C->S: 'FOOBAR isto nao e um comando valido'
+[23:26:35] [sessão 5] S->C: '400 ERRO comando desconhecido'
+[23:26:35] [sessão 5] C->S: 'QUIT'
+[23:26:35] [sessão 5] S->C: '221 tchau'
+[23:26:35] [sessão 5] - encerrada conexão de 127.0.0.1:60552
+[23:26:35] [sessão 6] + cliente 127.0.0.1:60554 — conectando ao servidor 127.0.0.1:5050
+[23:26:35] [sessão 6] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:26:35] [sessão 6] C->S: 'LOGIN alice S3nh4Secreta'
+[23:26:35] [sessão 6] S->C: '200 OK bem-vindo alice'
+[23:26:36] [sessão 6] - encerrada conexão de 127.0.0.1:60554
+[23:26:36] [sessão 1] C->S: 'QUIT'
+[23:26:36] [sessão 1] S->C: '221 tchau'
+[23:26:36] [sessão 1] - encerrada conexão de 127.0.0.1:60539
+[23:26:36] [sessão 2] C->S: 'QUIT'
+[23:26:36] [sessão 2] S->C: '221 tchau'
+[23:26:36] [sessão 2] - encerrada conexão de 127.0.0.1:60541

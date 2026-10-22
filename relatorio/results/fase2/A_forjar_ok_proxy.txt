@@ -1,0 +1,8 @@
+[23:24:47] PROXY MITM escutando em 127.0.0.1:5151 -> servidor 127.0.0.1:5050  adulteração: forjar-ok(401->200)
+[23:24:48] [sessão 1] + cliente 127.0.0.1:58106 — conectando ao servidor 127.0.0.1:5050
+[23:24:48] [sessão 1] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:24:48] [sessão 1] C->S: 'LOGIN bob senhaERRADA'
+[23:24:48] [sessão 1] S->C ADULTERADA: '401 ERRO credenciais invalidas' -> '200 OK bem-vindo bob'
+[23:24:48] [sessão 1] C->S: 'QUIT'
+[23:24:48] [sessão 1] S->C: '221 tchau'
+[23:24:48] [sessão 1] - encerrada conexão de 127.0.0.1:58106

@@ -1,0 +1,6 @@
+[2026-10-21 23:24:52] 4 usuario(s) carregado(s) de 'C:\Users\luis.silva\Documents\faculdade\lab-redes\t2\T1-Lab-Redes\usuarios.txt'.
+[2026-10-21 23:24:52] AUTH-SERVICE escutando em 127.0.0.1:5050 (TEXTO CLARO — apenas para laboratorio isolado)
+[2026-10-21 23:24:53] + conexao de 127.0.0.1:58117
+[2026-10-21 23:24:53]   127.0.0.1:58117 LOGIN FALHOU usuario='admin'
+[2026-10-21 23:24:53]   127.0.0.1:58117 QUIT
+[2026-10-21 23:24:53] - encerrada conexao de 127.0.0.1:58117
