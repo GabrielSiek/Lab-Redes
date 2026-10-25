@@ -265,7 +265,7 @@ A divergência é a prova: o servidor registrou \texttt{FALHOU}, mas o cliente
 recebeu \texttt{200 OK}. Sem integridade/autenticação, o cliente não tem como
 distinguir a resposta forjada de uma legítima.
 
-\subsection{Cenário B — valor adulterado aceito (C$\rightarrow$S)}
+\subsection{Cenário B — valor adulterado aceito (C\texorpdfstring{$\rightarrow$}{->}S)}
 
 Com \texttt{-{}-trocar-senha S3nh4Secreta}, o proxy injeta a senha correta na
 linha \texttt{LOGIN}. O cliente usa uma senha \textbf{qualquer}, mas o servidor
@@ -281,7 +281,7 @@ linha \texttt{LOGIN}. O cliente usa uma senha \textbf{qualquer}, mas o servidor
   127.0.0.1:... LOGIN OK usuario='alice'
 \end{lstlisting}
 
-\subsection{Cenário C — comando adulterado (C$\rightarrow$S)}
+\subsection{Cenário C — comando adulterado (C\texorpdfstring{$\rightarrow$}{->}S)}
 
 Com \texttt{-{}-trocar-usuario admin}, o proxy troca o usuário do \texttt{LOGIN}.
 O servidor passa a avaliar \textbf{outra conta} — \texttt{admin} — sem qualquer
