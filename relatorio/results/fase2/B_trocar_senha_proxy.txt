@@ -1,0 +1,8 @@
+[23:24:50] PROXY MITM escutando em 127.0.0.1:5151 -> servidor 127.0.0.1:5050  adulteração: trocar-senha=S3nh4Secreta
+[23:24:51] [sessão 1] + cliente 127.0.0.1:58111 — conectando ao servidor 127.0.0.1:5050
+[23:24:51] [sessão 1] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:24:51] [sessão 1] C->S ADULTERADA: 'LOGIN alice senhaQUALQUER' -> 'LOGIN alice S3nh4Secreta'
+[23:24:51] [sessão 1] S->C: '200 OK bem-vindo alice'
+[23:24:51] [sessão 1] C->S: 'QUIT'
+[23:24:51] [sessão 1] S->C: '221 tchau'
+[23:24:51] [sessão 1] - encerrada conexão de 127.0.0.1:58111

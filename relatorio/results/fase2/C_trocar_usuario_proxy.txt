@@ -1,0 +1,8 @@
+[23:24:53] PROXY MITM escutando em 127.0.0.1:5151 -> servidor 127.0.0.1:5050  adulteração: trocar-usuario=admin
+[23:24:53] [sessão 1] + cliente 127.0.0.1:58116 — conectando ao servidor 127.0.0.1:5050
+[23:24:53] [sessão 1] S->C: '200 AUTH-SERVICE v1 pronto'
+[23:24:53] [sessão 1] C->S ADULTERADA: 'LOGIN alice S3nh4Secreta' -> 'LOGIN admin S3nh4Secreta'
+[23:24:53] [sessão 1] S->C: '401 ERRO credenciais invalidas'
+[23:24:53] [sessão 1] C->S: 'QUIT'
+[23:24:53] [sessão 1] S->C: '221 tchau'
+[23:24:53] [sessão 1] - encerrada conexão de 127.0.0.1:58116

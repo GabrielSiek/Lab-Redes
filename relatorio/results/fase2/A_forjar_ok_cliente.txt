@@ -1,0 +1,5 @@
+﻿<< 200 AUTH-SERVICE v1 pronto
+>> LOGIN bob senhaERRADA
+<< 200 OK bem-vindo bob
+>> QUIT
+<< 221 tchau
