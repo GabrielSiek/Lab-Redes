@@ -1,0 +1,8 @@
+[11:18:15] MITM-TLS escutando em 0.0.0.0:5050 (se passando por 10.0.0.20:5050)
+[11:18:15] apresentando certificado de ATACANTE: /mnt/c/Users/loren/Desktop/Projects/T1-Lab-Redes/fase3/certs/atacante.crt
+[11:18:15] (esperado: o cliente valida a CA e RECUSA a conexao)
+
+[11:18:17] + cliente 10.0.0.10:39804 conectou; iniciando handshake TLS falso...
+[11:18:17]   handshake FALHOU: o cliente recusou o certificado de atacante.
+[11:18:17]   detalhe TLS: [SSL: TLSV1_ALERT_UNKNOWN_CA] tlsv1 alert unknown ca (_ssl.c:1082)
+[11:18:17]   >>> ATAQUE NEUTRALIZADO: a credencial NAO foi enviada.

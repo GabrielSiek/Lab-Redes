@@ -1,0 +1,12 @@
+[TLS OK] servidor autenticado: CN=servidor-auth | cifra=TLS_AES_256_GCM_SHA384
+<< 200 AUTH-SERVICE v1 pronto
+>> LOGIN alice S3nh4Secreta  (agora cifrado pelo TLS)
+<< 200 OK bem-vindo alice
+>> QUIT
+<< 221 tchau
+[TLS OK] servidor autenticado: CN=servidor-auth | cifra=TLS_AES_256_GCM_SHA384
+<< 200 AUTH-SERVICE v1 pronto
+>> LOGIN bob 123456  (agora cifrado pelo TLS)
+<< 200 OK bem-vindo bob
+>> QUIT
+<< 221 tchau

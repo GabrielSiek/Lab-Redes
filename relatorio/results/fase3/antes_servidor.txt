@@ -1,0 +1,6 @@
+[2026-11-20 11:18:01] 4 usuario(s) carregado(s) de '/mnt/c/Users/loren/Desktop/Projects/T1-Lab-Redes/usuarios.txt'.
+[2026-11-20 11:18:01] AUTH-SERVICE escutando em 0.0.0.0:5050 (TEXTO CLARO — apenas para laboratorio isolado)
+[2026-11-20 11:18:03] + conexao de 10.0.0.10:57162
+[2026-11-20 11:18:03]   10.0.0.10:57162 LOGIN OK usuario='alice'
+[2026-11-20 11:18:03]   10.0.0.10:57162 QUIT
+[2026-11-20 11:18:03] - encerrada conexao de 10.0.0.10:57162

@@ -1,0 +1,5 @@
+<< 200 AUTH-SERVICE v1 pronto
+>> LOGIN alice S3nh4Secreta
+<< 200 OK bem-vindo alice
+>> QUIT
+<< 221 tchau

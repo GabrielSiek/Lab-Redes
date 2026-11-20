@@ -1,0 +1,7 @@
+================================================================
+ ATAQUE DETECTADO / CONEXAO ABORTADA
+ A validacao do certificado do servidor FALHOU:
+   [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)
+ O cliente NAO enviou a credencial. Possiveis causas: MITM se
+ passando pelo servidor, ou certificado invalido/expirado.
+================================================================

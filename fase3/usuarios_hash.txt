@@ -1,0 +1,7 @@
+# Base de credenciais PROTEGIDA — Fase 3
+# Formato: usuario:pbkdf2_sha256$<iteracoes>$<salt_b64>$<hash_b64>
+# As senhas NAO sao recuperaveis a partir deste arquivo.
+alice:pbkdf2_sha256$200000$DxwXnCaX4I6MmlfO7T7evA==$7H6bncGHHbDjmLOAhoJwDi+K3rAgOtxR0036SERYvHQ=
+bob:pbkdf2_sha256$200000$I1XgqHdn+ZeFF5ZRkcWxQw==$K0iwhAlaD0FF+lsyEtrjoienrD/IKsQyKq4WA06pvQU=
+carol:pbkdf2_sha256$200000$bsIiQoPtiC7nBVmQqpj7TA==$YIIVKV4uBvwNBg0HqIqtSapQJVH4dxSWVrAne1f0Rb0=
+admin:pbkdf2_sha256$200000$sDQhiArpzpQ3qoxcbVwqyw==$VD48vFzoTRMnUPsVLh/1MhK17zmhqLNBAsNTiwHau/k=
