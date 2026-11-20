@@ -10,3 +10,6 @@ __pycache__/
 *.synctex.gz
 # Copia duplicada do relatorio na raiz (versao versionada fica em relatorio/)
 /relatorio_fase1.pdf
+# Fase 3: certificados/chaves privadas e saidas de demo (gerados por script)
+fase3/certs/
+fase3/saida_demo/
